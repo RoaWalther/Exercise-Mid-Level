@@ -1,0 +1,167 @@
+body {
+	background-color: #000;
+	color: #222;
+	font-family: sans-serif;
+	height: 100%;
+	text-align: center;
+}
+
+input {
+	width: 100%;
+	background: transparent;
+	display: inline-block;
+	margin: 12px auto;
+	padding: 9px;
+	border: none;
+	border-top: 2px solid #48e;
+	outline: none !important;
+	box-sizing: border-box;
+	transition: background-color 0.3s;
+	color: #fff;
+}
+
+input::placeholder {
+		color: #48e;
+		transition: color 0.3s;
+}
+
+input:hover::placeholder {
+		color: #fff;
+}
+	
+input:hover{
+	background-color: #26a; ;
+ }
+
+input[type="submit"] {
+	width: 60%;
+	padding: 12px;
+	color: #fff;
+	background-color: #26a;
+	margin-top: 18px;
+}
+
+input[type="submit"]:hover {
+	background-color: #048;
+}
+
+form {
+	width: 86%;
+	margin: auto;
+	background-color: #012;
+	padding: 30px;
+}
+
+h1 {
+	color: #fff;
+	margin: auto;
+	text-align: center;
+}
+
+.green {
+	color: #090;
+}
+
+.red {
+		color: #900;
+}
+.resultado {
+	border: 2px solid #000;
+	text-align: center;
+}
+
+.contenedor {
+	display: grid;
+	grid-template-rows: 50px;
+	grid-template-columns: repeat(4, minmax(min-content,max-content));
+	width: 100%;
+	grid-gap: 1rem;
+	text-align: center;
+	justify-content:center;
+	box-sizing: border-box;
+	color: #fff;
+}
+
+.contenedor .grid-item {
+	padding: 10px;
+	border: 1px solid #26a;
+	margin: 5px;
+	align-items: center;
+}
+
+.btn-confirmar {
+	width: 51%;
+	padding: 8px;
+	color: #fff;
+	background-color: #26a;
+	margin-top: 10px;
+	margin: 2%;
+	transition: all 2s;
+}
+
+.btn-confirmar:hover {
+	background-color: rgb(4, 33, 76);	
+}
+.datos {
+	width: 91%;
+	display: inline-block;
+	text-align: center;
+	padding: 50px auto;
+	font-size: 30px;
+	color: #fff;
+	margin: 10px auto;
+	border: 1px dashed #fff;
+}
+.content {
+	margin: auto;
+	width: 50%;
+}
+
+@media (max-width:600px){
+  .contenedor {
+	display: grid;
+	grid-template-rows: 50px;
+	grid-template-columns: repeat(2, minmax(min-content,max-content));
+	text-align: center;
+	justify-content:center;
+	box-sizing: border-box;
+	color: #fff;
+	scroll-behavior: auto;
+	}
+	.contenedor .grid-item {
+	padding: 5px;
+	border: 1px solid #26a;
+	margin: 5px;
+	align-items: center;
+	}
+	.btn-confirmar {
+	width: 60%;
+	padding: 8px;
+	color: #fff;
+	background-color: #26a;
+	margin-top: 10px;
+	margin: 0 20%;
+	margin-bottom: 50px;
+	}
+
+	.datos {
+		width: 95%;
+		display: inline-block;
+		text-align: center;
+		padding: 50px auto;
+		font-size: 28px;
+		color: #fff;
+		margin: 10px auto;
+		border: 1px dashed #fff;
+	}
+	.content {
+		margin: auto;
+		width: 90%;
+	}
+	h1 {
+		font-size: 30px;
+		color: #fff;
+		margin: auto;
+		text-align: center;
+	}
+}

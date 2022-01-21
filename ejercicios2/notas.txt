@@ -1,0 +1,8 @@
+{
+    "Matematicas": "4.5",
+    "Fisica": "4.2",
+    "Algebra": "4.4",
+    "Programacion": "4.6",
+    "Logica": "4.4",
+    "Algoritmo": "4.8"
+}

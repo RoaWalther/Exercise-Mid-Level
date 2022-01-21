@@ -1,0 +1,154 @@
+* {
+	font-family: 'Corinthia', monospace;
+	font-weight: 100;
+}
+
+					/*ANIMACIONES*/
+.container {
+	width: 100%;
+	padding: 10px;
+	background: #952;
+	margin-top: 150px;
+	position: absolute;
+	margin-bottom: 20px;
+}
+
+.caja {
+	border-radius: 50%;
+	background: #bbb;
+	height: 80px;
+	width: 80px;
+	margin: 10px;
+	position: relative;
+	animation-name: desplazamiento;
+	animation-duration: 1s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-fill-mode: forwards;
+
+}
+
+@keyframes desplazamiento {
+
+	0% {
+		background: #900;
+		left: 0;
+	}
+	10%{
+		left: 5%;
+		background: rgb(85, 150, 85);
+	}
+	20%{
+		left: 15%;
+		background: #090;
+	}
+	30%{
+		left: 25%;
+		background: rgb(216, 231, 117);
+	}
+	40%{
+		left: 35%;
+		background: rgb(236, 248, 2);
+	}
+	50%{
+		left: 45%;
+		background: rgb(171, 96, 161);
+	}
+	60%{
+		left: 55%;
+		background: rgb(248, 2, 166);
+	}
+	70%{
+		left: 65%;
+		background: rgb(198, 134, 221);
+	}
+	80%{
+		left: 75%;
+		background: rgb(111, 8, 106);
+	}
+	90%{
+		left: 85%;
+		background: rgb(154, 143, 238);
+	}
+	100% {
+		left: 92%;
+		background: rgb(11, 11, 245);
+	}
+}
+
+/*TRANSFORMAS*/
+
+.container__trans {
+	position: absolute;
+	width: 100%;
+	background: #752;
+	margin: auto;
+}
+
+.caja__trans {
+	background: #090;
+	height: 80px;
+	width: 10%;
+	display: flex;
+	float: right;
+	color: #fff;
+	margin-right: 30px;
+	/* transform: translate(100%); */
+	transition: transform 1s;
+}
+
+.caja__trans:hover {
+	transform: scalex(20);
+	filter: blur(20px);
+}
+
+p {
+	margin: auto;
+}
+
+				/*BACKGROUND*/
+
+.container__back {
+	height: 200px;
+	width: 30%;
+	border: 4px dashed rgba(0, 0, 153, 0.395);
+	margin: 10px 10px 50px 10px;
+	color: #fff;
+	background-image: url(/img/descarga1.jpg);
+	background-size: cover;
+	background-attachment: scroll;
+	text-align: center;
+	transform: translate(100%);
+	transition: all 2s;
+}
+
+.container__back:hover {
+	filter: sepia(70%);
+	transform: rotate(25deg) translateY(0);
+}
+
+.content {
+	width: 100%;
+	min-height: 50px;
+	margin: auto;
+	text-align: center;
+	background: #222;
+}
+
+.boton {
+	background: #999;
+	color: #fff;
+	width: 20%;
+	height: 30px;
+	margin: 10px;
+	transition:  1s forward;
+}
+
+.boton::before{
+	content: "Next Page";
+}
+.boton:hover{
+	background: #888;
+}
+
+
